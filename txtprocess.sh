@@ -12,8 +12,8 @@ input_file="$1"
 #tr '[:upper:]' '[:lower:]' < "$input_file" > output.txt
 #tr '[:upper:]' '[:lower:]' < "$input_file" | sed -e 's/[[:punct:]]/ /g' > output.txt
 #tr '[:upper:]' '[:lower:]' < "$input_file" | sed -e 's/[[:punct:]]/ /g' | sed 's/[ \t]/\n/g' > output.txt
-#tr '[:upper:]' '[:lower:]' < "$input_file" | sed -e 's/[[:punct:]]/ /g' | sed 's/[ \t]/\n/g' | grep -vE '^ +$' > output.txt
-tr '[:upper:]' '[:lower:]' < "$input_file" | sed -e 's/[[:punct:]]/ /g' | sed 's/[ \t]/\n/g' | grep -vE '^ +$' > output.txt
+#tr '[:upper:]' '[:lower:]' < "$input_file" | sed -e 's/[[:punct:]]/ /g' | sed 's/[ \t]/\n/g' | grep -vE '^\s*$' > output.txt
+tr '[:upper:]' '[:lower:]' < "$input_file" | sed -e 's/[[:punct:]]/ /g' | sed 's/[ \t]/\n/g' | grep -vE '^\s*$'|sort  > output.txt
 
 
 echo "Output written"
