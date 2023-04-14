@@ -1,0 +1,6 @@
+JOB pre combine.sh
+JOB parseshaker parseshaker.sub
+JOB post combine.sh
+
+PARENT pre CHILD parseshaker
+PARENT parseshaker CHILD post
