@@ -1,0 +1,21 @@
+# Before running this with "condor_submit multpleJobs.sub",
+# the directories log, error, and output must exist.
+
+universe = vanilla
+
+log = log/$(Cluster)_$(Process).log
+error = error/$(Cluster)_$(Process).err
+output = output/$(Cluster)_$(Process).out
+
+executable = print_name.sh
+arguments = $(name)
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+# transfer_input_files = file1, file2
+
+request_cpus = 1
+request_memory = 500MB
+request_disk = 100MB
+
+queue name from names.txt
