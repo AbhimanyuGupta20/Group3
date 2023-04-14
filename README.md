@@ -1,9 +1,6 @@
 # Group3
 Contributers:
-
-Peter Harmer 
-
-bostrom2,Bostrom,Jonah
-
-adgupta2,Dev Gupta,Abhimanyu
+pharmer, Harmer, Peter
+bostrom2, Bostrom, Jonah
+adgupta2, Dev Gupta, Abhimanyu
 
