@@ -5,3 +5,7 @@
 sort -m plays_* | uniq -c >countsOfWords
 
 #Convert the merged sorted file to one called countsOfWords
+
+#File Cleanup
+
+rm -rf *.txt
