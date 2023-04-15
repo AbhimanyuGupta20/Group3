@@ -9,4 +9,5 @@ sort -m plays_* | uniq -c | sort -r >countsOfWords
 
 #File Cleanup
 
-rm -rf *.txt
+rm -rf play*.txt
+rm -f output.txt
